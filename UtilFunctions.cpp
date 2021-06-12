@@ -3,6 +3,6 @@
 
 int UtilFunctions::GetMainMenuIndex()
 {
-    std::cout<<"I man being called in as sample1"<< std::endl;
+    std::cout<<"I man being called in as sample2"<< std::endl;
     return 0;
 }
