@@ -1,5 +1,8 @@
 #include "UtilFunctions.h"
+#include "BaseUtil.h"
+#include "SmplIntr.h"
 #include<iostream>
+
 using namespace std;
 int UtilFunctions::GetMainMenuIndex()
 {
@@ -34,5 +37,16 @@ void UtilFunctions::UserDailyUtilsMenu()
         cout<<"0. previous Menu\t"<<"1.exit"<<endl;
         cout<<"2. Simple Interest\t"<<"3.Compounding Interest"<<endl;
         cin>>lpIdx;
+        switch(lpIdx)
+        {
+            case 2:
+            {
+                auto utl = new SmplIntr();
+                utl->Start_util();
+                break;
+            }
+            default:
+                break;
+        }
     }
 }
