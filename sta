@@ -1,0 +1,6 @@
+#!/bin/bash
+echo "checking out application\n"
+git clone https://github.com/khanda89/ADV_CPP_UTLS.git
+sleep 1
+make
+./app
