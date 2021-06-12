@@ -14,3 +14,13 @@ void BaseUtil::Start_util()
         std::cin>>fl;
     }while(fl);
 }
+
+void BaseUtil::Input()
+{
+    std::cout<<"Please enter the the Principal Amount"<<std::endl;
+    std::cin>>p;
+    std::cout<<"Please enter the interest rate "<< std::endl;
+    std::cin>>in;
+    std::cout<<"Please enter the tenor of the loan"<<std::endl;
+    std::cin>>tn;
+}

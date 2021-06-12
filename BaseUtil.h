@@ -5,7 +5,7 @@ class BaseUtil
 
     public:
     BaseUtil():p(0), in(0), tn(0){}
-    virtual void Input()=0;
+    virtual void Input();
     virtual void Calculate() = 0;
     virtual void Display() = 0;
     void Start_util();

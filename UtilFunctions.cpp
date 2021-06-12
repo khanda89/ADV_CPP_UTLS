@@ -1,6 +1,7 @@
 #include "UtilFunctions.h"
 #include "BaseUtil.h"
 #include "SmplIntr.h"
+#include "CmpndIntr.h"
 #include<iostream>
 
 using namespace std;
@@ -42,6 +43,12 @@ void UtilFunctions::UserDailyUtilsMenu()
             case 2:
             {
                 auto utl = new SmplIntr();
+                utl->Start_util();
+                break;
+            }
+            case 3:
+            {
+                auto utl = new CmpndIntr();
                 utl->Start_util();
                 break;
             }
