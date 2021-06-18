@@ -2,6 +2,7 @@
 #include "BaseUtil.h"
 #include "SmplIntr.h"
 #include "CmpndIntr.h"
+#include "EMIUtil.h"
 #include<iostream>
 
 using namespace std;
@@ -37,9 +38,11 @@ void UtilFunctions::UserDailyUtilsMenu()
         cout<<"\n\n\n **********User Utils Options**********"<<endl;
         cout<<"0. previous Menu\t"<<"1.exit"<<endl;
         cout<<"2. Simple Interest\t"<<"3.Compounding Interest"<<endl;
+        cout<<"4. EMI calculation"<<endl;
         cin>>lpIdx;
         switch(lpIdx)
         {
+            case 1: exit(0);
             case 2:
             {
                 auto utl = new SmplIntr();
@@ -49,6 +52,12 @@ void UtilFunctions::UserDailyUtilsMenu()
             case 3:
             {
                 auto utl = new CmpndIntr();
+                utl->Start_util();
+                break;
+            }
+            case 4:
+            {
+                auto utl = new EMIUtil();
                 utl->Start_util();
                 break;
             }
