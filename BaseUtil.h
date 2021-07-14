@@ -8,7 +8,7 @@ class BaseUtil
     virtual void Input();
     virtual void Calculate() = 0;
     virtual void Display() = 0;
-    void Start_util();
+    virtual void Start_util();
 
     void SetPrincipal(double pr) {p = pr;}
     void SetInterest(double intr) {in = intr;}

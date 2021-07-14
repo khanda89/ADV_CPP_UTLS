@@ -3,6 +3,7 @@
 #include "SmplIntr.h"
 #include "CmpndIntr.h"
 #include "EMIUtil.h"
+#include "PerformanceUtil.h"
 #include<iostream>
 
 using namespace std;
@@ -21,6 +22,9 @@ int UtilFunctions::GetMainMenuIndex()
         {
             case 1:
                 UserDailyUtilsMenu();
+                break;
+            case 2:
+                CppAdvConceptMenu();
                 break;
             default:
                 break;
@@ -64,5 +68,32 @@ void UtilFunctions::UserDailyUtilsMenu()
             default:
                 break;
         }
+    }
+}
+
+void UtilFunctions::CppAdvConceptMenu()
+{
+    cout<<"\n The Advance CPP concept" << endl;
+    int lpIdx = 1;
+    while(lpIdx)
+    {
+        cout<<"\n\n\n **********Advance CPP Concepts Options**********"<<endl;
+        cout<<"1.Performance \t"<<"0.exit"<<endl;
+        cin>>lpIdx;
+        switch(lpIdx)
+        {
+            case 0:exit(0);
+            case 1:
+
+                {
+                    auto obj = new PerformanceUtil();
+                    obj->Start_util();
+                    break;
+                }
+            default:
+                break;
+
+        }
+        lpIdx++;
     }
 }
